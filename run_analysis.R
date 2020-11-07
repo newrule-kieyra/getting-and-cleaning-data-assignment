@@ -10,6 +10,9 @@ train_subject_test <- read.table("./UCI HAR Dataset/train/subject_test.txt")
 train_x_test <- read.table("./UCI HAR Dataset/train/X_test.txt")
 train_y_test <- read.table("./UCI HAR Dataset/train/y_test.txt")
 
+variable_names <- read.table("./UCI HAR Dataset/features.txt")
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
+
 #step 1:Merges the training and the test sets to create one data set
 subject_total <- rbind(test_subject_test, train_subject_test)
 x_total <- rbind(test_x_test, train_x_test)
